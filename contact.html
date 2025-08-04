@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | WAENI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">WAENI</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner contact-banner">
+    <h1>Get in Touch</h1>
+    <p>We'd love to hear from you</p>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- Contact Info -->
+      <div class="contact-info" data-animate>
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Ministry of Industry, Trade and Investment, Old Federal Secretariat, FCT-Abuja</p>
+        <p><i class="fas fa-phone"></i> 0701 030 4066, 0807 723 2494</p>
+        <p><i class="fas fa-envelope"></i> waeninitiatives@gmail.com</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=61563425727557" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/waeninitiatives?igsh=emlreHBpY2kxdXg4" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@waeni.initiative" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form" data-animate>
+        <h2>Send Us a Message</h2>
+        <form action="https://formspree.io/f/mgvzapjz" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GOOGLE MAP -->
+  <section class="map-section" data-animate>
+    <iframe src="https://www.google.com/maps?q=Old+Federal+Secretariat,+FCT-Abuja&output=embed" width="100%" height="350" style="border:0;" allowfullscreen></iframe>
+  </section>
+
+
+  <!-- FOOTER SECTION -->
+<footer style="background: #880588; color: #f1f5f9; padding: 40px 20px; font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+    
+    <!-- Logo / NGO Name -->
+    <div style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h2 style="font-size: 22px; color: #fff; font-weight: bold;">WAENI INITIATIVES</h2>
+      <p style="font-size: 14px; color: #d1fae5;">Empowering Women and the Girl Child</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h4 style="margin-bottom: 10px; font-size: 16px;">Quick Links</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="index.html" style="color: #f1f5f9; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: #f1f5f9; text-decoration: none;">About Us</a></li>
+        <li><a href="outreach.html" style="color: #f1f5f9; text-decoration: none;">Outreach</a></li>
+        <li><a href="contact.html" style="color: #74a6d8; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h4 style="margin-bottom: 10px; font-size: 16px;">Contact</h4>
+      <p style="font-size: 14px;">Email: waeninitiatives@gmail.com</p>
+      <p style="font-size: 14px;">Phone: 07010304066, 08077232494</p>
+    </div>
+
+    <!-- Social Links -->
+    <div style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h4 style="margin-bottom: 10px; font-size: 16px;">Follow Us</h4>
+      <div style="display: flex; gap: 15px;">
+        <a href="#" style="color: #f1f5f9; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #f1f5f9; font-size: 18px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: #f1f5f9; font-size: 18px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #f1f5f9; font-size: 18px;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" style="color: #f1f5f9; font-size: 18px;"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #d1fae5;">
+    &copy; 2025 WAENI INITIATIVES. All Rights Reserved.
+  </div>
+</footer>
+
+
+
+  <script>
+    // Animation on scroll
+    const animateEls = document.querySelectorAll('[data-animate]');
+    window.addEventListener('scroll', () => {
+      animateEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!-- 
+✅ Next Steps for You:
+FormSpree Activation
+
+Visit https://formspree.io
+
+Sign in with your Gmail (waeninitiatives@gmail.com)
+
+Create a form endpoint (or use the one in the code: https://formspree.io/f/mayrnpnk)
+
+You’ll start receiving messages straight to your inbox.
+
+Replace Banner Image (optional)
+
+In the CSS:
+
+css
+Copy
+Edit
+.banner.contact-banner {
+  background: linear-gradient(...), url('banner-image.jpg') ...
+}
+Replace 'banner-image.jpg' with your desired image filename in your project folder.
+
+Test the Page
+
+Try filling out the form and sending a message
+
+Click each social icon to ensure links open correctly -->
